@@ -6,6 +6,7 @@ import android.os.Bundle;
 //import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -32,7 +33,7 @@ import static android.content.ContentValues.TAG;
 
 public class MainActivity extends AppCompatActivity  {
 
-    //Firebase
+    //Firebase ??
     private static final int RC_SIGN_IN = 10;
     private GoogleApiClient mGoogleApiClient;
     private FirebaseAuth firebaseAuth;
@@ -41,7 +42,17 @@ public class MainActivity extends AppCompatActivity  {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        setContentView(R.layout.activity_main);
-        //test
+
+
+
+        ImageButton imgbtn1 = findViewById(R.id.img_btn1);
+        imgbtn1.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, pop_login.class));
+            }
+
+        });
     }
 }

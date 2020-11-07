@@ -7,4 +7,9 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="AppTheme.pop_login">
+        <item name="android:windowIsTranslucent">true</item><!--배경 보일수 있게해줌-->
+        <item name="android:windowCloseOnTouchOutside">true</item><!--바깥눌렀을때 원위치-->
+    </style>
+
 </resources>

@@ -29,7 +29,12 @@
             android:screenOrientation="landscape" />
         <activity
             android:name=".MainActivity"
-            android:screenOrientation="landscape" />
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".educationpage4"
             android:screenOrientation="landscape" />
@@ -49,14 +54,14 @@
             android:name=".shortsentence"
             android:screenOrientation="landscape" />
         <activity
+            android:name=".pop_login"
+            android:theme="@style/AppTheme.pop_login"
+            android:screenOrientation="landscape"/>
+        <activity
             android:name=".Mypage"
             android:screenOrientation="landscape">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
+
     </application>
 
 </manifest>
