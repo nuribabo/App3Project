@@ -43,16 +43,22 @@ public class MainActivity extends AppCompatActivity  {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-//12
-
+        // 로그인 팝업창 이동
         ImageButton imgbtn1 = findViewById(R.id.img_btn1);
         imgbtn1.setOnClickListener(new View.OnClickListener() {
-
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(MainActivity.this, pop_login.class));
             }
+        });
 
+        // 회원가입 팝업창 이동
+        ImageButton imgbtn2 = findViewById(R.id.img_btn2);
+        imgbtn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, pop_join.class));
+            }
         });
     }
 }

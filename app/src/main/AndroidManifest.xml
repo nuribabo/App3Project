@@ -58,6 +58,10 @@
             android:theme="@style/AppTheme.pop_login"
             android:screenOrientation="landscape"/>
         <activity
+            android:name=".pop_join"
+            android:theme="@style/AppTheme.pop_login"
+            android:screenOrientation="landscape"/>
+        <activity
             android:name=".Mypage"
             android:screenOrientation="landscape">
         </activity>
